@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/the-weather-project',
     redirect: { name: 'Home' },
   },
   {
