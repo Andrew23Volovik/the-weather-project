@@ -8,5 +8,5 @@ module.exports = {
       },
     },
   },
-  //publicPath: '/the-weather-project/',
+  publicPath: '/the-weather-project/',
 };

@@ -104,10 +104,11 @@ export default new Vuex.Store({
       };
 
       const data = JSON.parse(localStorage.getItem('favoriteData'));
-      const findFavorite = data.find((el) => el.city.name === city.name);
-
-      if (findFavorite) {
-        weatherDataObj.isFavorite = true;
+      if (data) {
+        const findFavorite = data.find((el) => el.city.name === city.name);
+        if (findFavorite) {
+          weatherDataObj.isFavorite = true;
+        }
       }
 
       commit('setWeatherData', [weatherDataObj]);
