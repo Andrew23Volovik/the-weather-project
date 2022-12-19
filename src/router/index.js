@@ -11,12 +11,12 @@ const routes = [
     redirect: { name: 'Home' },
   },
   {
-    path: 'the-weather-project/home',
+    path: '/the-weather-project/home',
     name: 'Home',
     component: TheHome,
   },
   {
-    path: 'the-weather-project/favorite',
+    path: '/the-weather-project/favorite',
     name: 'Favorite',
     component: TheFavorite,
   },
