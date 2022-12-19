@@ -7,16 +7,16 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/the-weather-project',
     redirect: { name: 'Home' },
   },
   {
-    path: '/home',
+    path: 'the-weather-project/home',
     name: 'Home',
     component: TheHome,
   },
   {
-    path: '/favorite',
+    path: 'the-weather-project/favorite',
     name: 'Favorite',
     component: TheFavorite,
   },
@@ -24,7 +24,6 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: '/the-weather-project/',
   routes,
 });
 
