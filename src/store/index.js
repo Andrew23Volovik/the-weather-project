@@ -115,7 +115,9 @@ export default new Vuex.Store({
     },
     getLocalStorageData({ commit }) {
       const data = JSON.parse(localStorage.getItem('favoriteData'));
-      commit('addToFavotiteData', data);
+      if (data) {
+        commit('addToFavotiteData', data);
+      }
     },
   },
   modules: {},
