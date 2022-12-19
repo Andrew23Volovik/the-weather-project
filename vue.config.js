@@ -8,5 +8,6 @@ module.exports = {
       },
     },
   },
-  publicPath: '/the-weather-project/',
+  publicPath:
+    process.env.NODE_ENV === 'production' ? '/the-weather-project/' : '/',
 };
