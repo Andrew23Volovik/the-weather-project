@@ -20,12 +20,12 @@ export default {
         {
           name: 'Home',
           isActive: true,
-          path: '/home',
+          path: '/the-weather-project/home',
         },
         {
           name: 'Favorite',
           isActive: false,
-          path: '/favorite',
+          path: '/the-weather-project/favorite',
         },
       ],
     };

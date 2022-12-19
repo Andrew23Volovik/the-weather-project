@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <div class="header__logo">
+        <div class="header__logo" @click="redirect">
           <mdicon name="weather-partly-cloudy" class="header__logo__icon" />
           <span>TW</span>
         </div>
@@ -14,6 +14,13 @@
 <script>
 export default {
   name: 'TheHeaderComponent',
+  methods: {
+    redirect() {
+      if (this.$route.name !== 'Home') {
+        this.$router.push({ name: 'Home' });
+      }
+    },
+  },
 };
 </script>
 
